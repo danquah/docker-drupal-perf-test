@@ -4,6 +4,8 @@ IFS=$'\n\t'
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 STORAGE="${DIR}/storage"
 
+docker pull danquah/drupal-perf-test
+
 echo "Preparing storage dir ${STORAGE}"
 sudo rm -fr "${STORAGE}"
 mkdir "${STORAGE}"
